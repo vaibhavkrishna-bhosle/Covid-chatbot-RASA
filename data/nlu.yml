@@ -289,6 +289,58 @@ nlu:
     - myself [Harsh](name)
     - myself [demo](name)
 
+- intent: safeenv
+  examples: |
+    - How to make your environment safer
+    - What is the etmosphere we need to take care of?
+    - how to keep the sourroundings?
+    - how to mentain the sorrounding?
+
+- intent: ifill
+  examples: |
+    - What to do if you feel unwell?
+    - what to do if i feel ill?
+    - what to do if i feel fever?
+    - what to do if i feel i have covid?
+    - what to do if i feel sick?
+    - what to do if i not feel good?
+
+
+- intent: poster
+  examples: |
+    - where can i find covid posters
+    - posters on covid
+    - wallpapers
+    - who posters
+    - wall stickers
+
+- intent: mask_guidelines
+  examples: |
+    - how to wear mask?
+    - proper way to wear mask?
+    - right way to wear mask?
+
+- intent: facts
+  examples: |
+    - myths
+    - fake news
+    - asumptions
+
+- intent: who
+  examples: |
+    - world health organisatation website?
+    - online references?
+    - website
+    - web page
+    - online materials
+
+- intent: helpline
+  examples: |
+    - helpline number
+    - covid emergency number
+    - helpline contact
+    - covid helpline number
+    - covid tollfree number
 
 - intent: Thanks
   examples: |

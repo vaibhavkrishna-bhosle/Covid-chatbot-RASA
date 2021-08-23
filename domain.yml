@@ -24,6 +24,13 @@ intents:
   - corona_vaccine
   - corona_infected person
   - Thanks
+  - safeenv
+  - ifill
+  - poster
+  - mask_guidelines
+  - facts
+  - who
+  - helpline
 
 
 actions:
@@ -49,6 +56,40 @@ slots:
 responses:
   utter_greet:
   - text: "Hey! Welcome To COVID-19 Bot."
+
+  utter_helpline:
+  - text: "104 
+        \n1912
+        \n1075
+        \n080-46848600
+        \n080-66692000
+        \n9745697456"
+
+  utter_who:
+  - text: "https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
+
+  utter_facts:
+  - text: "refer the following website for latest updates. https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"
+
+  utter_mask_guidelines:
+  - text: "1. Clean your hands before you put your mask on, as well as before and after you take it off, and after you touch it at any time.
+      \n 2. Make sure it covers both your nose, mouth and chin. 
+      \n 3. When you take off a mask, store it in a clean plastic bag, and every day either wash it if it’s a fabric mask, or dispose of a medical mask in a trash bin.
+      \n 4. Don’t use masks with valves."
+
+  utter_poster:
+  - text: "you can find all the official WHO posters at https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
+
+  utter_ifill:
+  - text: "1. Know the full range of symptoms of COVID-19.
+    \n 2. Stay home and self-isolate even if you have minor symptoms such as cough, headache, mild fever untill recover.
+    \n 3. If you have a fever, cough and difficulty breathing, seek medical attention immediately. Call by telephone first, if you can.
+    \n 4. Keep up to date on the latest information from trusted sources, such as WHO or your local and national health authorities."
+
+  utter_safeenv:
+  - text: "1. Avoid the 3Cs: spaces that are closed, crowded or involve close contact
+    \n 2. Meet people outside
+    \n 3. Avoid crowded or indoor settings"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -92,8 +133,9 @@ responses:
   - text: "At this time, CDC has no data to suggest that this new coronavirus or other similar coronaviruses are spread by mosquitoes or ticks."
   
   utter_corona_prevent:
-  - text: "The best way to prevent illness is to avoid being exposed to the virus. CDC recommends everyday preventive actions to help prevent the spread of respiratory diseases."
-  
+  - text: "Maintain at least a 1-metre distance between yourself and others \n 
+          Make wearing a mask a normal part of being around other people. The appropriate use, storage and cleaning or disposal are essential to make masks as effective as possible"
+
   utter_corona_symptoms:
   - text: "COVID-19 symptoms include:CoughFever or chills Shortness of breath or difficulty breathing Muscle or body aches Sore throat New loss of taste or smell Diarrhea Headache New fatigue Nausea or vomiting Congestion and many more"
   

@@ -102,12 +102,41 @@ stories:
   - intent: corona_infected person
   - action: utter_corona_infected person
 
-
+- story: safe envs
+  steps:
+  - intent: safeenv
+  - action: utter_safeenv
 
 - story: thanks path
   steps:
   - intent: Thanks
   - action: utter_Thanks
+
+- story: if fell ill
+  steps:
+  - intent: ifill
+  - action: utter_ifill
+
+- story: who
+  steps:
+  - intent: who
+  - action: utter_who
+
+- story: helpline
+  steps:
+  - intent: helpline
+  - action: utter_helpline
+
+- story: poster
+  steps:
+  - intent: poster
+  - action: utter_poster
+
+- story: mask guidelines
+  steps:
+  - intent: mask_guidelines
+  - action: utter_mask_guidelines
+
 
 - story: who am i
   steps:

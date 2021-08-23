@@ -12,3 +12,67 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
+- rule: corona community spread path
+  steps:
+  - intent: corona_community
+  - action: utter_corona_community
+
+- rule: corona mosquito path
+  steps:
+  - intent: corona_mosq_spread
+  - action: utter_corona_mosq_spread
+
+- rule: corona prevent path
+  steps:
+  - intent: corona_prevent
+  - action: utter_corona_prevent
+
+- rule: corona symptoms path
+  steps:
+  - intent: corona_symptoms
+  - action: utter_corona_symptoms
+
+- rule: corona vaccine path
+  steps:
+  - intent: corona_vaccine
+  - action: utter_corona_vaccine
+
+- rule: corona infected path
+  steps:
+  - intent: corona_infected person
+  - action: utter_corona_infected person
+
+- rule: safe envs
+  steps:
+  - intent: safeenv
+  - action: utter_safeenv
+
+- rule: thanks path
+  steps:
+  - intent: Thanks
+  - action: utter_Thanks
+
+- rule: if fell ill
+  steps:
+  - intent: ifill
+  - action: utter_ifill
+
+- rule: helpline
+  steps:
+  - intent: helpline
+  - action: utter_helpline
+
+- rule: poster
+  steps:
+  - intent: poster
+  - action: utter_poster
+
+- rule: who path
+  steps:
+  - intent: who
+  - action: utter_who
+
+- rule: mask guidelines
+  steps:
+  - intent: mask_guidelines
+  - action: utter_mask_guidelines
