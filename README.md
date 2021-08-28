@@ -17,5 +17,7 @@ rasa run actions
 ## run for online use
 ./ngrok http 5005
 
+# Usefull Credentials
 
-https://e30c6adf09e2.ngrok.io/webhooks/twilio/webhook
+http://64d4-49-206-1-206.ngrok.io/webhooks/twilio/webhook
+
