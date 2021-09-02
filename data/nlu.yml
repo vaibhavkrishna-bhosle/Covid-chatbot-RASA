@@ -1,6 +1,78 @@
 version: "2.0"
 
 nlu:
+
+- intent: fda
+  examples: |
+    - What is the FDA doing to respond to the COVID-19 pandemic?
+
+- intent: sanitizer
+  example: |
+    - Is hand sanitizer effective against COVID-19?
+    - uses of hand sanitizer
+    - how effective is hand sanitiser
+    - how to use hand sanitizer
+
+- intent: dose3
+  example: |
+    - third dose effects?
+    - should i take 3rd dose?
+    - will third dose help me?
+    - benifits of third dose?
+
+- intent: blood
+  examples: |
+    - Does COVID-19 present a risk to the safety of the nation’s blood supply?
+    - can i donate blood after covid
+    - blood donation
+    - can covid spred from blood
+
+- intent: vape
+  example: |
+    - If I vape tobacco or nicotine am I at risk for complications from COVID-19?
+    - vape
+    - how vaping effect me
+    - will smoking effect
+    - cigrate
+    - nicotine
+
+- intent: drug
+  examples: |
+    - drugs
+    - meds
+    - medicines
+    - cure
+    - treatement
+
+- intent: varient
+  examples: |
+    - are new varients more dangerous
+    - new varents of covid
+
+- intent: vaccnew
+  examples: |
+    - vaccines for new varients
+    - will vaccine work for new varients also?
+    - will i need different vaccine for new varient
+
+- intent: children
+  examples: |
+    - can children get covid
+    - can my child ge covid
+    - can my baby get covid
+    - can children get infected by covid
+
+- intent: travel
+  examples: |
+    - traveling in covid
+    - precautions while travelling
+    - safty tips to travel
+
+- intent: delta
+  examples: |
+    - delta varient
+    - what is delta varient
+
 - intent: greet
   examples: |
     - hey
@@ -175,6 +247,8 @@ nlu:
     - prevent corona
     - how once can prevent himself/herself from getting infected from covid19?
     - how once can prevent himself/herself from getting infected from corona?
+    - precautions
+    - what are the precautions to be taken
 
 - intent: corona_infected person
   examples: |
@@ -292,9 +366,9 @@ nlu:
 - intent: safeenv
   examples: |
     - How to make your environment safer
-    - What is the etmosphere we need to take care of?
-    - how to keep the sourroundings?
-    - how to mentain the sorrounding?
+    - What is the atmosphere we need to take care of?
+    - how to keep the surroundings?
+    - how to maintain the ssurrounding?
 
 - intent: ifill
   examples: |

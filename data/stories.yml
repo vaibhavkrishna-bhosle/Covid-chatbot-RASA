@@ -29,6 +29,65 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
+- story: fda
+  steps:
+  - intent: fda
+  - action: utter_fda
+
+- story: 
+  steps:
+  - intent:
+  - action: utter
+
+- story: sanitizer
+  steps:
+  - intent: sanitizer
+  - action: utter_sanitizer
+
+- story: 
+  steps:
+  - intent: 
+  - action: utter_
+
+- story: blood
+  steps:
+  - intent: blood
+  - action: utter_blood
+
+- story: vape
+  steps:
+  - intent: vape
+  - action: utter_vape
+
+- story: drug
+  steps:
+  - intent: drug
+  - action: utter_drug
+
+- story: varient
+  steps:
+  - intent: varient
+  - action: utter_varient
+
+- story: vaccnew
+  steps:
+  - intent: vaccnew
+  - action: utter_vaccnew
+
+- story: children
+  steps:
+  - intent: children
+  - action: utter_children
+
+- story: travel
+  steps:
+  - intent: travel
+  - action: utter_travel
+
+- story: delta
+  steps:
+  - intent: delta
+  - action: utter_delta
 
 - story: corona intro
   steps:

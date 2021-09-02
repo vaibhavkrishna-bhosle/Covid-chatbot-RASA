@@ -12,6 +12,66 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
+- rule: fda
+  steps:
+  - intent: fda
+  - action: utter_fda
+
+- rule: 
+  steps:
+  - intent:
+  - action: utter
+
+- rule: sanitizer
+  steps:
+  - intent: sanitizer
+  - action: utter_sanitizer
+
+- rule: 
+  steps:
+  - intent: 
+  - action: utter_
+
+- rule: blood
+  steps:
+  - intent: blood
+  - action: utter_blood
+
+- rule: vape
+  steps:
+  - intent: vape
+  - action: utter_vape
+
+- rule: drug
+  steps:
+  - intent: drug
+  - action: utter_drug
+
+- rule: varient
+  steps:
+  - intent: varient
+  - action: utter_varient
+
+- rule: vaccnew
+  steps:
+  - intent: vaccnew
+  - action: utter_vaccnew
+
+- rule: children
+  steps:
+  - intent: children
+  - action: utter_children
+
+- rule: travel
+  steps:
+  - intent: travel
+  - action: utter_travel
+
+- rule: delta
+  steps:
+  - intent: delta
+  - action: utter_delta
+
 - rule: corona community spread path
   steps:
   - intent: corona_community

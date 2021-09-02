@@ -31,6 +31,17 @@ intents:
   - facts
   - who
   - helpline
+  - fda
+  - sanitizer
+  - dose3
+  - blood
+  - vape
+  - drug
+  - varient
+  - vaccnew
+  - children
+  - travel
+  - delta
 
 
 actions:
@@ -54,6 +65,42 @@ slots:
     type: unfeaturized
 
 responses:
+
+  utter_fda:
+  - text: "The FDA, along with other federal, state, and local agencies and public health officials across the country and internationally, plays a critical role in protecting public health during the COVID-19 pandemic. FDA staff are working around the clock to support development of  medical countermeasures and are providing regulatory advice, guidance, and technical assistance to advance the development and availability of vaccines, therapies, diagnostic tests and other medical devices for use diagnosing, treating, and preventing this novel virus. The FDA continues to monitor the human and animal food supply and take swift action on fraudulent COVID-19 products."
+
+  utter_sanitizer:
+  - text: "The best way to prevent the spread of infections and decrease the risk of getting sick is by washing your hands with plain soap and water, advises the CDC. Washing hands often with soap and water for at least 20 seconds is essential, especially after going to the bathroom; before eating; and after coughing, sneezing, or blowing one’s nose. If soap and water are not available, CDC recommends consumers use an alcohol-based hand sanitizer that contains at least 60% alcohol."
+
+  utter_vape:
+  - text: "E-cigarette use can expose the lungs to toxic chemicals, but whether those exposures increase the risk of COVID-19 or the severity of COVID-19 outcomes is not known. However, many e-cigarette users are current or former smokers, and cigarette smoking increases the risk of respiratory infections, including pneumonia."
+
+  utter_dose3:
+  - text: "The FDA updated the emergency use authorizations for the Pfizer-BioNTech and Moderna COVID-19 vaccines to allow for the use of an additional dose in certain immunocompromised individuals. People who are fully vaccinated against COVID-19 and are not immunocompromised do not need an additional dose of COVID-19 vaccine at this time."
+
+  utter_blood:
+  - text: "In general, respiratory viruses are not known to be transmitted by blood transfusion, and there have been no reported cases of transfusion-transmitted coronavirus."
+
+  utter_drug:
+  - text: "If you have additional questions, call the FDA’s Division of Drug Information at (855) 543-3784 or email us at druginfo@fda.hhs.gov. "
+
+  utter_varient:
+  - text: "Experts are continuing to monitor these variants around the world to better understand their impact, including on children. So far, the evidence doesn’t suggest that these variants are specifically targeting children, and severe illness in young people remains relatively rare."
+
+  utter_vaccnew:
+  - text: "WHO says that the vaccines approved to date are expected to provide at least some protection against the new variants."
+
+  utter_children:
+  - text: |- 
+      We are still learning how it affects children. We know it is possible for people of any age to be infected and transmit the virus, although older people and/or those with pre-existing medical conditions seem more likely to develop serious illness.
+      Seek care early if your child is having symptoms and try to avoid going to public places (workplace, schools, public transport) to prevent it spreading to others.
+
+  utter_travel:
+  - text: "Anyone planning a trip should always follow local and national guidance on whether it is advisable to travel. Those traveling should check the advisory for their destination for any restrictions on entry, quarantine requirements on entry, or other relevant travel advice."
+
+  utter_delta:
+  - text: " Delta is regarded as one of the most contagious forms of the coronavirus so far, and currently accounts for the majority of COVID-19 cases in the U.S."
+
   utter_greet:
   - text: "Hey! Welcome To COVID-19 Bot."
 
