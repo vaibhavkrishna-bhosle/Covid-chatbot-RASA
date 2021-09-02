@@ -34,20 +34,17 @@ stories:
   - intent: fda
   - action: utter_fda
 
-- story: 
-  steps:
-  - intent:
-  - action: utter
+
 
 - story: sanitizer
   steps:
   - intent: sanitizer
   - action: utter_sanitizer
 
-- story: 
+- story: dose3
   steps:
-  - intent: 
-  - action: utter_
+  - intent: dose3
+  - action: utter_dose3
 
 - story: blood
   steps:

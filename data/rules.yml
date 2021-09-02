@@ -17,20 +17,16 @@ rules:
   - intent: fda
   - action: utter_fda
 
-- rule: 
-  steps:
-  - intent:
-  - action: utter
 
 - rule: sanitizer
   steps:
   - intent: sanitizer
   - action: utter_sanitizer
 
-- rule: 
+- rule: dose3
   steps:
-  - intent: 
-  - action: utter_
+  - intent: dose3
+  - action: utter_dose3
 
 - rule: blood
   steps:

@@ -7,14 +7,14 @@ nlu:
     - What is the FDA doing to respond to the COVID-19 pandemic?
 
 - intent: sanitizer
-  example: |
+  examples: |
     - Is hand sanitizer effective against COVID-19?
     - uses of hand sanitizer
     - how effective is hand sanitiser
     - how to use hand sanitizer
 
 - intent: dose3
-  example: |
+  examples: |
     - third dose effects?
     - should i take 3rd dose?
     - will third dose help me?
@@ -28,7 +28,7 @@ nlu:
     - can covid spred from blood
 
 - intent: vape
-  example: |
+  examples: |
     - If I vape tobacco or nicotine am I at risk for complications from COVID-19?
     - vape
     - how vaping effect me
@@ -48,6 +48,10 @@ nlu:
   examples: |
     - are new varients more dangerous
     - new varents of covid
+    - what is delta
+    - what is delta varient
+    - what is delta virus
+    - 
 
 - intent: vaccnew
   examples: |
