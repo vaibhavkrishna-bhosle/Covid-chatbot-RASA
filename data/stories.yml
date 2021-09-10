@@ -2,39 +2,20 @@ version: "2.0"
 
 stories:
 
-- story: happy path
+- story: surface
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - intent: surface
+  - action: utter__surface
 
-- story: sad path 1
+- story: pets
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - intent: pets
+  - action: utter_pets
 
 - story: fda
   steps:
   - intent: fda
   - action: utter_fda
-
-
 
 - story: sanitizer
   steps:
@@ -91,6 +72,10 @@ stories:
   - intent: corona_intro
   - action: utter_corona_intro
 
+- story: orign
+  steps:
+  - intent: orign
+  - action: utter_orign
 
 - story: corona spread
   steps:
@@ -155,8 +140,13 @@ stories:
 
 - story: corona infected path
   steps:
-  - intent: corona_infected person
-  - action: utter_corona_infected person
+  - intent: corona_infected_person
+  - action: utter_corona_infected_person
+
+- story: tests
+  steps:
+  - intent: tests
+  - action: utter_tests
 
 - story: safe envs
   steps:

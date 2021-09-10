@@ -2,6 +2,11 @@ version: "2.0"
 
 rules:
 
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_out_of_scope
+
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
@@ -58,10 +63,26 @@ rules:
   - intent: children
   - action: utter_children
 
+
+- rule: tests
+  steps:
+  - intent: tests
+  - action: utter_tests
+
 - rule: travel
   steps:
   - intent: travel
   - action: utter_travel
+
+- rule: orign
+  steps:
+  - intent: orign
+  - action: utter_orign
+
+- rule: corona spread
+  steps:
+  - intent: corona_spread
+  - action: utter_corona_spread
 
 - rule: delta
   steps:
@@ -95,8 +116,8 @@ rules:
 
 - rule: corona infected path
   steps:
-  - intent: corona_infected person
-  - action: utter_corona_infected person
+  - intent: corona_infected_person
+  - action: utter_corona_infected_person
 
 - rule: safe envs
   steps:

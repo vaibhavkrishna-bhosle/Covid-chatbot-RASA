@@ -2,6 +2,73 @@ version: "2.0"
 
 nlu:
 
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?
+
+- intent: surface
+  examples: |
+    - coronavirus from surfaces?
+    - covid on surfaces?
+    - corona on surface
+    - corona on steel
+    - corona on hands
+    - corona on door handels
+    - corona on mask
+    - corona on wood
+    - corona on objects
+    - corona on chair
+    - corona on table
+    - corona on cloths
+    - corona on water
+    - corona on paper
+    - covid on surface
+    - covid on steel
+    - covid on hands
+    - covid on door handels
+    - covid on mask
+    - covid on wood
+    - covid on objects
+    - covid on chair
+    - covid on table
+    - covid on cloths
+    - covid on water
+    - covid on paper
+
+- intent: orign
+  examples: |
+    - where did covid first orign from?
+    - how did covid start
+    - how corona virus was born
+    - how was covid born
+    - how was covid start
+    - when did corona start
+    - when covid started
+
+
+- intent: pets
+  examples: |
+    - corona virus spread from pets
+    - corona virus spread from cats
+    - corona virus spread from dogs
+    - corona virus spread from animals
+    - corona virus infection in animals
+    - corona virus infection from animals
+    - corona virus infection from pets
+    - corona virus infection from cats
+    - corona virus infection from dogs
+    - covid spread from pets
+    - covid spread from cats
+    - covid spread from dogs
+    - covid spread from animals
+    - covid infection in animals
+    - covid infection from animals
+    - covid infection from pets
+    - covid infection from cats
+    - covid infection from dogs
+
 - intent: fda
   examples: |
     - What is the FDA doing to respond to the COVID-19 pandemic?
@@ -38,11 +105,14 @@ nlu:
 
 - intent: drug
   examples: |
-    - drugs
-    - meds
-    - medicines
-    - cure
-    - treatement
+    - drugs for covid
+    - meds for covid
+    - medicines for corona
+    - antibiotics for corona
+    - antibiotics for covid
+    - treating COVID-19
+    - cure for corona
+    - treatement for corona
 
 - intent: varient
   examples: |
@@ -51,7 +121,18 @@ nlu:
     - what is delta
     - what is delta varient
     - what is delta virus
-    - 
+
+- intent: tests
+  examples: |
+    - Is there a test for covid-19
+    - how to test for covid
+    - tesing for corona virus
+    - rtpcr test
+    - swap test
+    - covid test
+    - corona virus tests
+    - covid testing
+
 
 - intent: vaccnew
   examples: |
@@ -107,15 +188,6 @@ nlu:
     - bye bye
     - see you later
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-
 - intent: deny
   examples: |
     - no
@@ -124,40 +196,6 @@ nlu:
     - I don't think so
     - don't like that
     - no way
-
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
 
 - intent: bot_challenge
   examples: |
@@ -186,6 +224,7 @@ nlu:
     - how does corona virus spread?
     - how does this virus spread?
     - how does corona spread?
+    - how it is spread person to person?
     - corona spread?
     - covid spread.
     - covid19 spread.
@@ -239,6 +278,7 @@ nlu:
     - vaccines available for prevention of corona virus?
     - Have the vaccines been developed for corona virus?
     - is there any vaccine for corona virus?
+    - Are the COVID-19 vaccines safe and effective? 
     - is there any vaccine for covid19 virus?
   
 
@@ -248,19 +288,28 @@ nlu:
     - how can i prevent corona virus?
     - how can i prevent covid-19?
     - prevent covid19?
-    - prevent corona
+    - corona Safety measures
+    - corona Safety tips
+    - virus guidelines
+    - corona guidelines
+    - covid guidelines
+    - prevent corona virus
     - how once can prevent himself/herself from getting infected from covid19?
     - how once can prevent himself/herself from getting infected from corona?
-    - precautions
+    - corona virus precautions
+    - How can I protect myself and others from COVID-19? 
     - what are the precautions to be taken
+    - covid protection
+    - covid safty
 
-- intent: corona_infected person
+- intent: corona_infected_person
   examples: |
     - If You or Someone You Know is Sick or Had Contact with Someone who Has COVID-19
     - If You or Someone You Know is Sick or Had Contact with Someone who Has corona?
     - what should i do if someone in my house gets infected by corona?
     - what should i do if someone in my house gets infected by covid-19?
     - someone gets covid-19 i know?
+    - detailed steps to be taken after getting infected
     - my family member gets infected by corona?
     - someone gets infected by corona i know?
     - someone gets infected by corona i was in contact with?
@@ -414,6 +463,13 @@ nlu:
 
 - intent: helpline
   examples: |
+    - covid emergency
+    - ambulance service
+    - help service
+    - corona helpline number
+    - corona service
+    - emergency service
+    - Emergency first aid services? 
     - helpline number
     - covid emergency number
     - helpline contact
