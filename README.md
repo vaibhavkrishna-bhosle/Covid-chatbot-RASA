@@ -1,9 +1,9 @@
 # new setup
 pip freeze > uninstall.txt
-pip uninstall uninstall.txt
+pip uninstall -r uninstall.txt
 
 # Rasa installation steps
-pip install rasa==2.4 rasa-x==0.38 -i https://pypi.rasa.com/simple --default-timeout=10000 --use-deprecated=legacy-resolver
+pip install rasa==2.0.2
 
 # run project
 

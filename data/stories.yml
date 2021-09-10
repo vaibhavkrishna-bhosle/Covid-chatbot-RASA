@@ -5,7 +5,7 @@ stories:
 - story: surface
   steps:
   - intent: surface
-  - action: utter__surface
+  - action: utter_surface
 
 - story: pets
   steps:

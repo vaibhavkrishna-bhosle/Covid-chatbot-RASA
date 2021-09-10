@@ -119,6 +119,11 @@ rules:
   - intent: corona_infected_person
   - action: utter_corona_infected_person
 
+- rule: surface
+  steps:
+  - intent: surface
+  - action: utter_surface
+
 - rule: safe envs
   steps:
   - intent: safeenv
