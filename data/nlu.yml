@@ -262,6 +262,9 @@ nlu:
     - how does food spread corona virus?
     - does consuming junk food spread corona virus?
     - how will corona spread from food?
+    - covid spread from food
+    - junk food
+    - consumming junk food
 
 - intent: corona_spread_warm
   examples: |
