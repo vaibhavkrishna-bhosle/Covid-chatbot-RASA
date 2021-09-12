@@ -97,6 +97,11 @@ stories:
   - intent: corona_spread_risk
   - action: utter_corona_spread_risk
 
+- story: airborne
+  steps:
+  - intent: airborne
+  - action: utter_airborne
+
 - story: corona tracker path
   steps:
   - intent: greet

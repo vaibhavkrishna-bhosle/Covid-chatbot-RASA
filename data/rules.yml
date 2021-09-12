@@ -17,6 +17,16 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
+- rule: airborne
+  steps:
+  - intent: airborne
+  - action: utter_airborne
+
+- rule: corona risk
+  steps:
+  - intent: corona_spread_risk
+  - action: utter_corona_spread_risk
+
 - rule: fda
   steps:
   - intent: fda

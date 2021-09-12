@@ -17,6 +17,11 @@ nlu:
     - corona on hands
     - corona on door handels
     - corona on mask
+    - Does consuming junk food spread corona virus 
+    - food spread
+    - covid from food
+    - junk food
+    - corona visur from food
     - corona on wood
     - corona on objects
     - corona on chair
@@ -68,6 +73,24 @@ nlu:
     - covid infection from pets
     - covid infection from cats
     - covid infection from dogs
+    - cats
+    - dogs
+    - animal
+    - Can humans get the coronavirus from dogs or cats?
+    - Can humans get the coronavirus from pets?
+    - Can humans get the coronavirus from animals?
+
+- intent: airborne
+  examples: |
+    - corona spread by air
+    - is covid airborne
+    - is corona virus spread from air
+    - airborne
+    - covid 19 by air
+    - corona virus by air
+    - covid by airboarne
+
+
 
 - intent: fda
   examples: |
@@ -118,9 +141,9 @@ nlu:
   examples: |
     - are new varients more dangerous
     - new varents of covid
-    - what is delta
-    - what is delta varient
-    - what is delta virus
+    - different varients
+    - what all varients are present in covid
+    - what all varients are present in corona
 
 - intent: tests
   examples: |
@@ -132,6 +155,9 @@ nlu:
     - covid test
     - corona virus tests
     - covid testing
+    - How are people tested for covid-19?
+    - testing for covid
+    - corona test
 
 
 - intent: vaccnew
@@ -157,6 +183,11 @@ nlu:
   examples: |
     - delta varient
     - what is delta varient
+    - what is delta
+    - what is delta varient
+    - what is delta virus
+    - delta virus
+    - what is delta virus
 
 - intent: greet
   examples: |
@@ -212,12 +243,14 @@ nlu:
 
 - intent: corona_intro
   examples: |
-    - what is corona?
-    - what is covid-19?
+    - what is corona
+    - what is covid-19
+    - what is corona virus
     - what is novel corona virus?
     - tell me about corona
     - can you tell me about corona
     - can you tell me about covid-19
+    - Why is it called a coronavirus?
 
 - intent: corona_spread
   examples: |
@@ -246,6 +279,15 @@ nlu:
   examples: |
     - who is at higher risk of infection
     - who is more prone to get corona virus infection
+    - risk of infection
+    - infection
+    - who will get corona virus first
+    - who are at high risk
+    - senior citizens
+    - old people
+    - elderly people
+    - grandpa
+    - grandma
 
 - intent: corona_community
   examples: |
@@ -301,6 +343,15 @@ nlu:
     - what are the precautions to be taken
     - covid protection
     - covid safty
+    - masks
+    - social distancing
+    - what is wearing mask all about
+    - what is social destancing
+    - how will mask protect me
+    - how social destance help me
+    - how social destance help fight against covid
+    - fight against covid
+    - fight against corona virus
 
 - intent: corona_infected_person
   examples: |

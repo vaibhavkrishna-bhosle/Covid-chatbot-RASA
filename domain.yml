@@ -48,6 +48,7 @@ intents:
   - orign
   - tests
   - corona_infected_person
+  - airborne
 
 actions:
   - actions_corona_state_stat
@@ -79,36 +80,24 @@ responses:
       - Blood test – In this case, a blood sample is taken from a vein in the arm. 
   utter_pets:
   - text: |
-      Reports of animals infected with SARS-CoV-2 have been documented around the world. Most of these animals became infected after contact with people with COVID-19, including owners, caretakers, or others who were in close contact. We don’t yet know all of the animals that can get infected.
-      At this time, there is no evidence that animals play a significant role in spreading SARS-CoV-2, the virus that causes COVID-19, to people. More studies are needed to understand if and how different animals could be affected by SARS-CoV-2.
-      Some coronaviruses that infect animals can be spread to people and then spread between people, but this is rare. This is what happened with SARS-CoV-2, which likely originated in bats.
+      "Reports of animals infected with SARS-CoV-2 have been documented around the world. Most of these animals became infected after contact with people with COVID-19, including owners, caretakers, or others who were in close contact. We don’t yet know all of the animals that can get infected.
+      \n At this time, there is no evidence that animals play a significant role in spreading SARS-CoV-2, the virus that causes COVID-19, to people. More studies are needed to understand if and how different animals could be affected by SARS-CoV-2.
+      \n Some coronaviruses that infect animals can be spread to people and then spread between people, but this is rare. This is what happened with SARS-CoV-2, which likely originated in bats.
   utter_surface:
   - text: |
-      - Metal : doorknobs, jewelry, silverware
-      5-9 days
-      - Wood : furniture, decking
-      4 days
-      - Plastics : milk containers and detergent bottles, subway and bus seats, elevator buttons
-      2 to 3 days
-      - Stainless steel : refrigerators, pots and pans, sinks, some water bottles
-      2 to 3 days
-      - Cardboard : shipping boxes
-      24 hours
-      - Copper : pennies, teakettles, cookware
-      4 hours
-      - Aluminum : soda cans, tinfoil, water bottles
-      2 to 8 hours
-      - Glass : drinking glasses, measuring cups, mirrors, windows
-      Up to 5 days
-      - Ceramics : dishes, pottery, mugs
-      5 days
-      - Paper : mail, newspaper
-      The length of time varies. Some strains of coronavirus live for only a few minutes on paper, while others live for up to 5 days.
-      - Food : takeout, produce
-      Coronavirus doesn't seem to spread through food.
+      - Metal : 5-9 days
+      - Wood : 4 days
+      - Plastics : 2 to 3 days
+      - Stainless steel : 2 to 3 days
+      - Cardboard : 24 hours
+      - Copper : 4 hours
+      - Aluminum : 2 to 8 hours
+      - Glass : Up to 5 days
+      - Ceramics : 5 days
+      - Paper : The length of time varies. Some strains of coronavirus live for only a few minutes on paper, while others live for up to 5 days.
+      - Food : Coronavirus doesn't seem to spread through food.
       - Water: Coronavirus hasn't been found in drinking water. If it does get into the water supply, your local water treatment plant filters and disinfects the water, which should kill any germs.
-      - Fabrics: clothes, linens
-      There’s not much research about how long the virus lives on fabric, but it’s probably not as long as on hard surfaces.
+      - Fabrics: There’s not much research about how long the virus lives on fabric, but it’s probably not as long as on hard surfaces.
   utter_out_of_scope:
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
   
@@ -131,15 +120,16 @@ responses:
   - text: "If you have additional questions, call the FDA’s Division of Drug Information at (855) 543-3784 or email us at druginfo@fda.hhs.gov. "
 
   utter_varient:
-  - text: "Experts are continuing to monitor these variants around the world to better understand their impact, including on children. So far, the evidence doesn’t suggest that these variants are specifically targeting children, and severe illness in young people remains relatively rare."
-
+  - text: |
+      - Experts are continuing to monitor these variants around the world to better understand their impact, including on children. So far, the evidence doesn’t suggest that these variants are specifically targeting children, and severe illness in young people remains relatively rare.
+      - For more latest information visit https://www.who.int/en/activities/tracking-SARS-CoV-2-variants/
   utter_vaccnew:
   - text: "WHO says that the vaccines approved to date are expected to provide at least some protection against the new variants."
 
   utter_children:
   - text: |
-      We are still learning how it affects children. We know it is possible for people of any age to be infected and transmit the virus, although older people and/or those with pre-existing medical conditions seem more likely to develop serious illness.
-      Seek care early if your child is having symptoms and try to avoid going to public places (workplace, schools, public transport) to prevent it spreading to others.
+      - We are still learning how it affects children. We know it is possible for people of any age to be infected and transmit the virus, although older people and/or those with pre-existing medical conditions seem more likely to develop serious illness.
+      - Seek care early if your child is having symptoms and try to avoid going to public places (workplace, schools, public transport) to prevent it spreading to others.
 
   utter_travel:
   - text: "Anyone planning a trip should always follow local and national guidance on whether it is advisable to travel. Those traveling should check the advisory for their destination for any restrictions on entry, quarantine requirements on entry, or other relevant travel advice."
@@ -152,12 +142,12 @@ responses:
 
   utter_helpline:
   - text: |
-      State COVID Control Room – 104 
-      Helpline Number :+91-11-23978046
-      General Numbers - 1912 , 1075 
-      Other  numbers: 080-46848600 , 080-66692000 , 9745697456
-      Helpline Email ID : ncov2019@gov.in
-      For more Details : https://covid19.karnataka.gov.in/page/Helpline/en
+      - State COVID Control Room – 104 
+      - Helpline Number :+91-11-23978046
+      - General Numbers - 1912 , 1075 
+      - Other  numbers: 080-46848600 , 080-66692000 , 9745697456
+      - Helpline Email ID : ncov2019@gov.in
+      - For more Details : https://covid19.karnataka.gov.in/page/Helpline/en
   
   utter_who:
   - text: "https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
@@ -167,23 +157,23 @@ responses:
 
   utter_mask_guidelines:
   - text: |
-      1. Clean your hands before you put your mask on, as well as before and after you take it off, and after you touch it at any time. 
-      2. Make sure it covers both your nose, mouth and chin. 
-      3. When you take off a mask, store it in a clean plastic bag, and every day either wash it if it’s a fabric mask, or dispose of a medical mask in a trash bin. 
-      4. Don’t use masks with valves.
+      - Clean your hands before you put your mask on, as well as before and after you take it off, and after you touch it at any time. 
+      - Make sure it covers both your nose, mouth and chin. 
+      - When you take off a mask, store it in a clean plastic bag, and every day either wash it if it’s a fabric mask, or dispose of a medical mask in a trash bin. 
+      - Don’t use masks with valves.
   utter_poster:
   - text: you can find all the official WHO posters at https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public
   utter_ifill:
   - text: |
-      1. Know the full range of symptoms of COVID-19. 
-      2. Stay home and self-isolate even if you have minor symptoms such as cough, headache, mild fever untill recover. 
-      3. If you have a fever, cough and difficulty breathing, seek medical attention immediately. Call by telephone first, if you can. 
-      4. Keep up to date on the latest information from trusted sources, such as WHO or your local and national health authorities.
+      - Know the full range of symptoms of COVID-19. 
+      - Stay home and self-isolate even if you have minor symptoms such as cough, headache, mild fever untill recover. 
+      - If you have a fever, cough and difficulty breathing, seek medical attention immediately. Call by telephone first, if you can. 
+      - Keep up to date on the latest information from trusted sources, such as WHO or your local and national health authorities.
   utter_safeenv:
   - text: |
-      1. Avoid the 3Cs: spaces that are closed, crowded or involve close contact 
-      2. Meet people outside 
-      3. Avoid crowded or indoor settings
+      - Avoid the 3Cs: spaces that are closed, crowded or involve close contact 
+      - Meet people outside 
+      - Avoid crowded or indoor settings
 
   utter_goodbye:
   - text: "GoodBye! Hope To See You Soon !  Just Type 'hey' or 'hi' anytime to redirect to the Intro Section of The Bot :))"
@@ -195,16 +185,17 @@ responses:
   - text: "The COVID-19 pandemic, also known as the coronavirus pandemic, is an ongoing pandemic of coronavirus disease 2019 (COVID-19) caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)."
   utter_corona_spread:
   - text: |
-      We know that the disease is caused by the SARS-CoV-2 virus, which spreads between people in several different ways.
-      The virus can spread from an infected person’s mouth or nose in small liquid particles when they cough, sneeze, speak, sing or breathe. These particles range from larger respiratory droplets to smaller aerosols.
-      Current evidence suggests that the virus spreads mainly between people who are in close contact with each other, typically within 1 metre (short-range). A person can be infected when aerosols or droplets containing the virus are inhaled or come directly into contact with the eyes, nose, or mouth.
-      The virus can also spread in poorly ventilated and/or crowded indoor settings, where people tend to spend longer periods of time. This is because aerosols remain suspended in the air or travel farther than 1 metre (long-range).
-      People may also become infected by touching surfaces that have been contaminated by the virus when touching their eyes, nose or mouth without cleaning their hands.
+      - We know that the disease is caused by the SARS-CoV-2 virus, which spreads between people in several different ways.
+      - The virus can spread from an infected person’s mouth or nose in small liquid particles when they cough, sneeze, speak, sing or breathe. These particles range from larger respiratory droplets to smaller aerosols.
+      - Current evidence suggests that the virus spreads mainly between people who are in close contact with each other, typically within 1 metre (short-range). A person can be infected when aerosols or droplets containing the virus are inhaled or come directly into contact with the eyes, nose, or mouth.
+      - The virus can also spread in poorly ventilated and/or crowded indoor settings, where people tend to spend longer periods of time. This is because aerosols remain suspended in the air or travel farther than 1 metre (long-range).
+      - People may also become infected by touching surfaces that have been contaminated by the virus when touching their eyes, nose or mouth without cleaning their hands.
   utter_orign:
   - text: This virus was first detected in Wuhan City, Hubei Province, China. The first infections were linked to a live animal market, but the virus is now spreading from person-to-person.
   utter_corona_food_spread:
   - text: "It is highly unlikely that people can contract COVID-19 from food or food packaging."
-
+  utter_airborne:
+  - text: "Yes, you can. Recent studies indicate that COVID can spread through tiny droplets that remain suspended in the air for long. In closed spaces with inadequate ventilation, a COVID positive person can leave such tiny droplets hanging in the air which can be circulated by the air-conditioning systems."
   utter_corona_spread_warm:
   - text: "With the start of summer coming soon, many are hopeful that the warmer weather will slow the spread of SARS-CoV-2, the novel coronavirus that causes COVID-19."
   utter_corona_spread_risk:
@@ -222,9 +213,9 @@ responses:
   
   utter_corona_prevent:
   - text: |
-      Maintain at least a 1-metre distance between yourself and others 
-      Make wearing a mask a normal part of being around other people. 
-      The appropriate use, storage and cleaning or disposal are essential to make masks as effective as possible
+      - Maintain at least a 1-metre distance between yourself and others 
+      - Make wearing a mask a normal part of being around other people. 
+      - The appropriate use, storage and cleaning or disposal are essential to make masks as effective as possible
   
   utter_corona_symptoms:
   - text: "COVID-19 symptoms include:CoughFever or chills Shortness of breath or difficulty breathing Muscle or body aches Sore throat New loss of taste or smell Diarrhea Headache New fatigue Nausea or vomiting Congestion and many more"
@@ -234,10 +225,10 @@ responses:
   
   utter_corona_infected_person:
   - text: |
-      Stay home for 14 days after your last contact with a person who has COVID-19. 
-      Be alert for symptoms. 
-      Watch for fever, cough, shortness of breath, or other symptoms of COVID-19.
-      Contact Covid helpline for assistance.
+      - Stay home for 14 days after your last contact with a person who has COVID-19. 
+      - Be alert for symptoms. 
+      - Watch for fever, cough, shortness of breath, or other symptoms of COVID-19.
+      - Contact Covid helpline for assistance.
   utter_Thanks:
   - text: "Your Welcome . Glad I could be of some help! Just type 'hey' or 'hi' again to redirect to the main phase of bot ! :))"
 
