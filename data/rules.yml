@@ -12,6 +12,11 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
+- rule: corona food spread
+  steps:
+  - intent: corona_food_spread
+  - action: utter_corona_food_spread
+
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
   - intent: bot_challenge
