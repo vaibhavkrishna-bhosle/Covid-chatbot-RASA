@@ -71,11 +71,11 @@ class Actioncoronastats(Action):
         for data in responses["statewise"]:
             if data["state"] == state.title():
                 print(data)
-                message = "Now Showing Cases For --> " + state.title() + "\n" + "Active: " + data[
-                   "active"] + "\n" + "Confirmed: " + data["confirmed"] + "\n" + "Recovered: " + data[
-                       "recovered"] + "\n" + "Deaths: " + data["deaths"] + "\n" + "Delta-Confirmed: " + data[
-                           "deltaconfirmed"] + "\n" + "Delta-Recovered: " + data[
-                               "deltarecovered"] + "\n" + "Delta-Deaths: " + data["deltadeaths"]
+                message = "Now Showing Cases For --> " + state.title() + "  \n" + "Active: " + data[
+                   "active"] + "  \n" + "Confirmed: " + data["confirmed"] + "  \n" + "Recovered: " + data[
+                       "recovered"] + "  \n" + "Deaths: " + data["deaths"] + "  \n" + "Delta-Confirmed: " + data[
+                           "deltaconfirmed"] + "  \n" + "Delta-Recovered: " + data[
+                               "deltarecovered"] + "  \n" + "Delta-Deaths: " + data["deltadeaths"]
 
         print(message)
         dispatcher.utter_message(message)
