@@ -5,12 +5,12 @@ import pickle
 import numpy as np
 
 from tensorflow.keras.models import load_model
-model = load_model('chatbot_model.h5')
+model = load_model('save/chatbot_model.h5')
 import json
 import random
 intents = json.loads(open('intents.json',encoding="utf8").read())
-words = pickle.load(open('words.pkl','rb'))
-classes = pickle.load(open('classes.pkl','rb'))
+words = pickle.load(open('save/words.pkl','rb'))
+classes = pickle.load(open('save/classes.pkl','rb'))
 import requests, datetime
 responses = requests.get("https://api.covid19india.org/data.json").json()
 
@@ -33,6 +33,19 @@ def get_date_count(date):
                 "dailyconfirmed"] + "\nDaily Deceased: " + data["dailydeceased"] + "\nDaily Recovered" + data[
                     "dailyrecovered"] + "\nTotal Confirmed: " + data["totalconfirmed"] + "\nTotal Deceased: " + data[
                         "totaldeceased"] + "\nTotal Recovered: " + data["totalrecovered"]
+    return message
+
+def get_month_count(date):
+    dailyconfirmed = 0
+    dailydeceased = 0
+    dailyrecovered = 0
+    months = ['January','February','March','April','May','June','July','August','September','October','November','December']
+    for data in responses["cases_time_series"]:
+            if data["dateymd"][:7] == date:
+                    dailyconfirmed += int(data['dailyconfirmed'])
+                    dailydeceased += int(data['dailydeceased'])
+                    dailyrecovered += int(data['dailyrecovered'])
+                    message = "Total cases in the month " + months[int(data["dateymd"][5:7])-1] + " " + str(int(data["dateymd"][:4])) + " is\nDaily Confirmed: " + str(dailyconfirmed) +"\nDaily Deceased: " + str(dailydeceased) + "\nDaily Recovered: " + str(dailyrecovered)
     return message
 
 def clean_up_sentence(sentence):
@@ -104,4 +117,7 @@ def chatbot_response(msg):
     else:
         ints = predict_class(msg, model)
         res = getResponse(ints, intents)
+    if ints[0]['intent'] == 'month_cal':
+        return get_month_count(msg)
+
     return res+"\n\nwith accuracy "+ints[0]["probability"]
