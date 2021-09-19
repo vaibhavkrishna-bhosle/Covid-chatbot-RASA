@@ -30,7 +30,7 @@ def get_date_count(date):
     for data in responses["cases_time_series"]:
         if data["dateymd"] == date:
             message = "Covid Cases on the date: " + date + "\nDaily Confirmed: " + data[
-                "dailyconfirmed"] + "\nDaily Deceased: " + data["dailydeceased"] + "\nDaily Recovered" + data[
+                "dailyconfirmed"] + "\nTotal Deceased: " + data["dailydeceased"] + "\nTotal Recovered" + data[
                     "dailyrecovered"] + "\nTotal Confirmed: " + data["totalconfirmed"] + "\nTotal Deceased: " + data[
                         "totaldeceased"] + "\nTotal Recovered: " + data["totalrecovered"]
     return message
@@ -45,7 +45,7 @@ def get_month_count(date):
                     dailyconfirmed += int(data['dailyconfirmed'])
                     dailydeceased += int(data['dailydeceased'])
                     dailyrecovered += int(data['dailyrecovered'])
-                    message = "Total cases in the month " + months[int(data["dateymd"][5:7])-1] + " " + str(int(data["dateymd"][:4])) + " is\nDaily Confirmed: " + str(dailyconfirmed) +"\nDaily Deceased: " + str(dailydeceased) + "\nDaily Recovered: " + str(dailyrecovered)
+                    message = "Total cases in the month " + months[int(data["dateymd"][5:7])-1] + " " + str(int(data["dateymd"][:4])) + " is\nTotal Confirmed: " + str(dailyconfirmed) +"\nTotal Deceased: " + str(dailydeceased) + "\nTotal Recovered: " + str(dailyrecovered)
     return message
 
 def clean_up_sentence(sentence):
