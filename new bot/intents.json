@@ -80,7 +80,7 @@
                 "Hola", 
                 "Hello", 
                 "Good day"],
-         "responses": ["Hey! welcome to covid 19 bot."],
+         "responses": ["Hey! Welcome to COVID-19 Bot."],
          "context": [""]
         },
         {"tag": "goodbye",
