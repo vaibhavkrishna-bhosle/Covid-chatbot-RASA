@@ -30,7 +30,7 @@ def get_date_count(date):
     for data in responses["cases_time_series"]:
         if data["dateymd"] == date:
             message = "Covid Cases on the date: " + date + "\nDaily Confirmed: " + data[
-                "dailyconfirmed"] + "\nTotal Deceased: " + data["dailydeceased"] + "\nTotal Recovered" + data[
+                "dailyconfirmed"] + "\nDaily Deceased: " + data["dailydeceased"] + "\nDaily Recovered: " + data[
                     "dailyrecovered"] + "\nTotal Confirmed: " + data["totalconfirmed"] + "\nTotal Deceased: " + data[
                         "totaldeceased"] + "\nTotal Recovered: " + data["totalrecovered"]
     return message
@@ -94,7 +94,7 @@ def getResponse(ints, intents_json):
     return result
 
 def chatbot_response(msg):
-    state_list = ["Total","Andaman and Nicobar Islands","Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chandigarh","Chhattisgarh","Dadra and Nagar Haveli and Daman and Diu","Delhi","Goa","Gujarat","Haryana","Himachal Pradesh","Jammu and Kashmir","Jharkhand","Karnataka","Kerala","Ladakh","Lakshadweep","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Puducherry","Punjab","Rajasthan","Sikkim","State Unassigned","Tamil Nadu","Telangana","Tripura","Uttar Pradesh","Uttarakhand","West Bengal"]
+    state_list = ["India","Total","Andaman and Nicobar Islands","Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chandigarh","Chhattisgarh","Dadra and Nagar Haveli and Daman and Diu","Delhi","Goa","Gujarat","Haryana","Himachal Pradesh","Jammu and Kashmir","Jharkhand","Karnataka","Kerala","Ladakh","Lakshadweep","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Puducherry","Punjab","Rajasthan","Sikkim","State Unassigned","Tamil Nadu","Telangana","Tripura","Uttar Pradesh","Uttarakhand","West Bengal"]
     format = "%Y-%m-%d"
     date_flag = 0
     msg = msg.lower()

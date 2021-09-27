@@ -14,7 +14,7 @@
                 "can you tell me about corona",
                 "can you tell me about covid-19",
                 "Why is it called a coronavirus?"],
-         "responses": ["Coronaviruses or COVID-19 is a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS)?"],
+         "responses": ["The COVID-19 pandemic, also known as the coronavirus pandemic, is an ongoing pandemic of coronavirus disease 2019 (COVID-19) caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)."],
          "context": [""]
         },
         {"tag": "food_spread",
@@ -80,9 +80,7 @@
                 "Hola", 
                 "Hello", 
                 "Good day"],
-         "responses": ["Hello, thanks for asking", 
-                "Good to see you again", 
-                "Hi there, how can I help?"],
+         "responses": ["Hey! welcome to covid 19 bot."],
          "context": [""]
         },
         {"tag": "goodbye",
