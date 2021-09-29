@@ -119,5 +119,6 @@ def chatbot_response(msg):
         res = getResponse(ints, intents)
     if ints[0]['intent'] == 'month_cal':
         return get_month_count(msg)
+    
 
     return res+"\n\nwith accuracy "+ints[0]["probability"]

@@ -10,7 +10,7 @@ def send():
     if msg != '':
         ChatLog.config(state=NORMAL)
         ChatLog.insert(END, "You: " + msg + '\n\n')
-        ChatLog.config(foreground="#430d27", font=("Verdana", 12 ))
+        ChatLog.config(foreground="black", font=("Verdana", 10 ),  bg="#ffffff")
 
         res = chatbot_response(msg)
         ChatLog.insert(END, "Bot: " + res + '\n\n')
@@ -19,12 +19,12 @@ def send():
         ChatLog.yview(END)
 
 base = Tk()
-base.title("COVID-19 Help Bot")
+base.title("COVID-19 Queries - Ready to help 24/7")
 base.geometry("550x500")
 base.resizable(width=FALSE, height=FALSE)
 
 #Create Chat window
-ChatLog = Text(base, bd=0, bg="#25D366", height="8", width="50", font="Arial",)
+ChatLog = Text(base, bd=0, bg="#ffffff", height="8", width="50", font=("Verdana",10))
 
 ChatLog.config(state=DISABLED)
 
@@ -33,12 +33,12 @@ scrollbar = Scrollbar(base, command=ChatLog.yview)
 ChatLog['yscrollcommand'] = scrollbar.set
 
 #Create Button to send message
-SendButton = Button(base, font=("Verdana",12,'bold'), text="Send", width="12", height=5,
-                    bd=0, bg="#34B7F1", activebackground="#34B7F1",fg='#000000',
+SendButton = Button(base, font=("Verdana",11,'bold'), text="Send", width="12", height=5,
+                    bd=0, bg="#4e9525", activebackground="#4e9525",fg='#000000',
                     command= send )
 
 #Create the box to enter message
-EntryBox = Text(base, bd=0, bg="green",width="29", height="4", font="Arial")
+EntryBox = Text(base, bd=0, bg="lightgrey",width="29", height="4", font=("Verdana",11))
 #EntryBox.bind("<Return>", send)
 
 #Place all components on the screen
