@@ -174,7 +174,7 @@ nlu:
     - precautions while travelling
     - safty tips to travel
 
-- intent: delta
+- intent: delta 
   examples: |
     - delta varient
     - what is delta varient

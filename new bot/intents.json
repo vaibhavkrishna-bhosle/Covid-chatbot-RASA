@@ -179,10 +179,10 @@
               "i travelled a place with corona cases area",
               "corona area",
               "how to protect visiting corona area",
-              "traveling in covi",
+              "traveling in covid",
               "precautions while travelling",
               "safty tips to travel"],
-         "responses": ["Protection measures for persons who are in or have recently visited (past 14 days) areas where COVID-19 is spreading\n\n1. Follow the guidance outlined above (Protection measures for everyone)\n2. Self-isolate by staying at home if you begin to feel unwell, even with mild symptoms such as headache, low grade fever (37.3 C or above) and slight runny nose, until you recover. If it is essential for you to have someone bring you supplies or to go out, e.g. to buy food, then wear a mask to avoid infecting other people.\n    Why? Avoiding contact with others and visits to medical facilities will allow these facilities to operate more effectively and help protect you and others from possible COVID-19 and other viruses.\n    If you develop fever, cough and difficulty breathing, seek medical advice promptly as this may be due to a respiratory infection or other serious condition. Call in advance and tell your provider of any recent travel or contact with travelers.This will also help to preventossible spread of COVID-19 and other viruses."],
+         "responses": ["Anyone planning a trip should always follow local and national guidance on whether it is advisable to travel. Those traveling should check the advisory for their destination for any restrictions on entry, quarantine requirements on entry, or other relevant travel advice."],
          "context": [""]
         },
         {"tag": "likely",
@@ -229,7 +229,7 @@
                 "is there any vaccine for corona virus?",
                 "Are the COVID-19 vaccines safe and effective? ",
                 "is there any vaccine for covid19 virus?"],
-         "responses": ["Human clinical trials for Covid-19 vaccine initiated in India: ICMR. Human clinical trials for a vaccine for Covid-19 have been initiated with approximately 1,000 volunteers participating in the exercise for each of the two indigenously developed vaccine candidates.\n\nVisit nearest health center to to get your vaccine."],
+         "responses": ["WHO says that the vaccines approved to date are expected to provide at least some protection against the new variants. \n contact nearest covid help center for better updates"],
          "context": [""]
         },
          {"tag": "SARS",
@@ -556,12 +556,23 @@
               "what is community spread?",
               "how does community spread occurs?",
               "community spread"],
-         "responses": ["During an outbreak, stay calm and put your preparedness plan to work. Follow the steps below:\n1.Stay home if you are sick. Keep away from people who are sick. Limit close contact with others as much as possible (about 6 feet).\n2.Stay informed about the local COVID-19 situation\n3.Continue practicing everyday preventive actions\n4.Notify your workplace as soon as possible if your regular work schedule changes\n5.Stay in touch with others by phone or email"],
+         "responses": ["Community spread means people have been infected with the virus in an area, including some who are not sure how or where they became infected."],
 	"context": [""]
 	},
-	{"tag": "communitywork",
-         "patterns": ["should i go to work if there is outbreak in my community"],
-         "responses": ["Follow the advice of your local health officials. Stay home if you can. Talk to your employer to discuss working from home, taking leave if you or someone in your household gets sick with COVID-19 symptoms, or if your child’s school is dismissed temporarily. Employers should be aware that more employees may need to stay at home to care for sick children or other sick family members than is usual in case of a community outbreak."],
+	{"tag": "poster",
+         "patterns": ["where can i find covid posters",
+              "posters on covid",
+              "wallpapers",
+              "who posters",
+              "wall stickers"],
+         "responses": ["you can find all the official WHO posters at \nhttps://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"],
+	"context": [""]
+	},
+	{"tag": "corona_spread_warm",
+         "patterns": ["how will warm weather stop corona virus?",
+              "Can warm weather actually stop corona?",
+              "will it stop with warm weather?"],
+         "responses": ["With the start of summer coming soon, many are hopeful that the warmer weather will slow the spread of SARS-CoV-2, the novel coronavirus that causes COVID-19."],
 	"context": [""]
 	},
 	{"tag": "testforcovid",
@@ -736,6 +747,21 @@
               "someone gets infected by covid i was in contact with?",
               "what to do if someone gets infected by covid i was in contact with?"],
        "responses": ["Stay home for 14 days after your last contact with a person who has COVID-19.\nBe alert for symptoms.\nWatch for fever, cough, shortness of breath, or other symptoms of COVID-19.\nContact Covid helpline for assistance."],
+       "context": [""]
+       },
+       {"tag": "vaccination centre",
+       "patterns": ["How can I find the nearest COVID-19 vaccination centre?"],
+       "responses": ["You can search in Co-WIN portal (or Aarogya Setu) for the vaccination centre nearest to your location by either searching through PIN code or by choosing the State and the District."],
+       "context": [""]
+       },
+       {"tag": "side effect",
+       "patterns": ["What are the common side effects of COVID-19 vaccines?"],
+       "responses": ["The most commonly-reported events with COVID-19 vaccines are expected vaccine side effects, such as headache, fatigue, muscle and joint pain, fever and chills and pain at the site of injection. The occurrence of these adverse events is consistent with what is already known about the vaccines from clinical trials."],
+       "context": [""]
+       },
+       {"tag": "vaccine work",
+       "patterns": ["How do COVID-19 vaccines work?"],
+       "responses": ["The COVID-19 vaccines produce protection against the disease, as a result of developing an immune response to the SARS-Cov-2 virus. Developing immunity through vaccination means there is a reduced risk of developing the illness and its consequences. This immunity helps you fight the virus if exposed."],
        "context": [""]
        }
       
